@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <package name="org.mql.java.ui">
+        <classe name="TestRunnerFrame">
+            <constructor modifier="public" name="org.mql.java.ui.TestRunnerFrame"/>
+            <field modifier="private static final" name="serialVersionUID" type="long"/>
+            <method modifier="public static" name="main" returnType="void"/>
+            <relation class="JFrame" name="héritage"/>
+            <relation class="String[]" name="Dépendance"/>
+        </classe>
+        <classe name="TestScreen">
+            <constructor modifier="public" name="org.mql.java.ui.TestScreen"/>
+            <field modifier="private" name="classSelector" type="javax.swing.JComboBox"/>
+            <field modifier="private" name="resultsArea" type="javax.swing.JTextArea"/>
+            <field modifier="private" name="runButton" type="javax.swing.JButton"/>
+            <method modifier="private" name="createTestClassList" returnType="java.util.Vector"/>
+            <method modifier="private" name="getTestClass" returnType="java.lang.Class"/>
+            <method modifier="private" name="runSelectedTest" returnType="void"/>
+            <method modifier="private" name="displayResults" returnType="void"/>
+            <method modifier="private" name="lambda$0" returnType="void"/>
+            <relation class="JPanel" name="héritage"/>
+            <relation class="JComboBox" name="Composition"/>
+            <relation class="JTextArea" name="Composition"/>
+            <relation class="JButton" name="Composition"/>
+            <relation class="Vector" name="Dépendance"/>
+            <relation class="String" name="Dépendance"/>
+            <relation class="Class" name="Dépendance"/>
+            <relation class="TestExecutionSummary" name="Dépendance"/>
+            <relation class="ActionEvent" name="Dépendance"/>
+        </classe>
+    </package>
+    <package name="org.mql.java.generics">
+        <classe name="Examples">
+            <constructor modifier="public" name="org.mql.java.generics.Examples"/>
+            <method modifier="public static" name="main" returnType="void"/>
+            <method modifier="" name="exp01" returnType="void"/>
+            <method modifier="" name="exp04" returnType="void"/>
+            <method modifier="" name="exp02" returnType="void"/>
+            <method modifier="" name="exp03" returnType="void"/>
+            <method modifier="" name="exp05" returnType="void"/>
+            <relation class="String[]" name="Dépendance"/>
+        </classe>
+        <classe name="Iter">
+            <constructor modifier="public" name="org.mql.java.generics.LinkedList$Iter"/>
+            <field modifier="private" name="pointer" type="org.mql.java.generics.LinkedList"/>
+            <field modifier="final" name="this$0" type="org.mql.java.generics.LinkedList"/>
+            <method modifier="public" name="hasNext" returnType="boolean"/>
+            <method modifier="public" name="next" returnType="java.lang.Object"/>
+            <relation class="Iterator" name="realisation"/>
+            <relation class="LinkedList" name="Agrégation"/>
+            <relation class="LinkedList" name="Agrégation"/>
+            <relation class="Object" name="Dépendance"/>
+        </classe>
+        <classe name="LinkedList">
+            <constructor modifier="public" name="org.mql.java.generics.LinkedList"/>
+            <constructor modifier="public" name="org.mql.java.generics.LinkedList"/>
+            <field modifier="private" name="value" type="java.lang.Object"/>
+            <field modifier="private" name="next" type="org.mql.java.generics.LinkedList"/>
+            <method modifier="public" name="remove" returnType="java.lang.Object"/>
+            <method modifier="public" name="size" returnType="int"/>
+            <method modifier="public" name="get" returnType="java.lang.Object"/>
+            <method modifier="public" name="indexOf" returnType="int"/>
+            <method modifier="public" name="isEmpty" returnType="boolean"/>
+            <method modifier="public" name="add" returnType="void"/>
+            <method modifier="public" name="iterator" returnType="java.util.Iterator"/>
+            <method modifier="public" name="contains" returnType="boolean"/>
+            <method modifier="public" name="set" returnType="void"/>
+            <method modifier="public" name="addFirst" returnType="void"/>
+            <method modifier="public" name="removeAll" returnType="void"/>
+            <method modifier="public" name="insertAt" returnType="void"/>
+            <method modifier="public" name="OccurrencesIter" returnType="int"/>
+            <method modifier="public" name="showElement" returnType="java.lang.String"/>
+            <method modifier="private" name="indexOfRec" returnType="int"/>
+            <relation class="List" name="realisation"/>
+            <relation class="Iterable" name="realisation"/>
+            <relation class="Object" name="Agrégation"/>
+            <relation class="LinkedList" name="Agrégation"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Iterator" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="String" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+        </classe>
+        <classe name="LinkedListTest">
+            <constructor modifier="public" name="org.mql.java.generics.LinkedListTest"/>
+            <method modifier="public" name="testRemoveAll" returnType="void"/>
+            <method modifier="public" name="testAddFirst" returnType="void"/>
+            <method modifier="" name="testAddAndSize" returnType="void"/>
+            <method modifier="public" name="testIterator" returnType="void"/>
+            <method modifier="public" name="testIsEmpty" returnType="void"/>
+            <method modifier="public" name="testContains" returnType="void"/>
+            <method modifier="public" name="testIndexOf" returnType="void"/>
+            <method modifier="public" name="testOccurrencesIter" returnType="void"/>
+            <method modifier="public" name="testAdd" returnType="void"/>
+            <method modifier="public" name="testRemove" returnType="void"/>
+            <method modifier="public" name="testSize" returnType="void"/>
+            <method modifier="public" name="testGet" returnType="void"/>
+            <method modifier="public" name="testSet" returnType="void"/>
+        </classe>
+        <classe name="Iter">
+            <constructor modifier="public" name="org.mql.java.generics.Set$Iter"/>
+            <field modifier="private" name="index" type="int"/>
+            <field modifier="final" name="this$0" type="org.mql.java.generics.Set"/>
+            <method modifier="public" name="hasNext" returnType="boolean"/>
+            <method modifier="public" name="next" returnType="java.lang.Object"/>
+            <relation class="Iterator" name="realisation"/>
+            <relation class="Set" name="Agrégation"/>
+            <relation class="Object" name="Dépendance"/>
+        </classe>
+        <classe name="Set">
+            <constructor modifier="public" name="org.mql.java.generics.Set"/>
+            <field modifier="private" name="data" type="[Ljava.lang.Object;"/>
+            <field modifier="private" name="size" type="int"/>
+            <field modifier="private" name="capacity" type="int"/>
+            <method modifier="public" name="remove" returnType="void"/>
+            <method modifier="public" name="size" returnType="int"/>
+            <method modifier="public" name="get" returnType="java.lang.Object"/>
+            <method modifier="public" name="isEmpty" returnType="boolean"/>
+            <method modifier="public" name="add" returnType="void"/>
+            <method modifier="public" name="iterator" returnType="java.util.Iterator"/>
+            <method modifier="public" name="contains" returnType="boolean"/>
+            <method modifier="public" name="set" returnType="void"/>
+            <method modifier="private" name="ensureCapacity" returnType="void"/>
+            <relation class="Iterable" name="realisation"/>
+            <relation class="Object[]" name="Agrégation"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Iterator" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+        </classe>
+        <classe name="SetTest">
+            <constructor modifier="public" name="org.mql.java.generics.SetTest"/>
+            <method modifier="" name="testIterator" returnType="void"/>
+            <method modifier="" name="testIsEmpty" returnType="void"/>
+            <method modifier="" name="testContains" returnType="void"/>
+            <method modifier="" name="testEnsureCapacity" returnType="void"/>
+            <method modifier="" name="testSetAndGet" returnType="void"/>
+            <method modifier="" name="testRemoveElementNotFound" returnType="void"/>
+            <method modifier="" name="testAdd" returnType="void"/>
+            <method modifier="" name="testRemove" returnType="void"/>
+        </classe>
+        <classe name="TestRunner">
+            <constructor modifier="public" name="org.mql.java.generics.TestRunner"/>
+            <method modifier="public" name="runTests" returnType="org.junit.platform.launcher.listeners.TestExecutionSummary"/>
+            <relation class="Class" name="Dépendance"/>
+            <relation class="TestExecutionSummary" name="Dépendance"/>
+        </classe>
+        <classe name="Iter">
+            <constructor modifier="public" name="org.mql.java.generics.Vector$Iter"/>
+            <field modifier="private" name="index" type="int"/>
+            <field modifier="final" name="this$0" type="org.mql.java.generics.Vector"/>
+            <method modifier="public" name="hasNext" returnType="boolean"/>
+            <method modifier="public" name="next" returnType="java.lang.Object"/>
+            <relation class="Iterator" name="realisation"/>
+            <relation class="Vector" name="Agrégation"/>
+            <relation class="Object" name="Dépendance"/>
+        </classe>
+        <classe name="Vector">
+            <constructor modifier="public" name="org.mql.java.generics.Vector"/>
+            <field modifier="private" name="data" type="[Ljava.lang.Object;"/>
+            <field modifier="private" name="size" type="int"/>
+            <field modifier="private" name="capacity" type="int"/>
+            <method modifier="public" name="remove" returnType="java.lang.Object"/>
+            <method modifier="public" name="size" returnType="int"/>
+            <method modifier="public" name="get" returnType="java.lang.Object"/>
+            <method modifier="public" name="indexOf" returnType="int"/>
+            <method modifier="public" name="isEmpty" returnType="boolean"/>
+            <method modifier="public" name="add" returnType="void"/>
+            <method modifier="public" name="iterator" returnType="java.util.Iterator"/>
+            <method modifier="public" name="contains" returnType="boolean"/>
+            <method modifier="public" name="set" returnType="void"/>
+            <method modifier="private" name="ensureCapacity" returnType="void"/>
+            <method modifier="public" name="removeAll" returnType="void"/>
+            <method modifier="public" name="insertAt" returnType="void"/>
+            <method modifier="public" name="OccurrencesIter" returnType="int"/>
+            <method modifier="public" name="showElement" returnType="java.lang.String"/>
+            <relation class="List" name="realisation"/>
+            <relation class="Iterable" name="realisation"/>
+            <relation class="Object[]" name="Agrégation"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Iterator" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="Object" name="Dépendance"/>
+            <relation class="Object" name="Dépendance"/>
+            <relation/>
+            <relation class="String" name="Dépendance"/>
+        </classe>
+        <classe name="VectorTest">
+            <constructor modifier="public" name="org.mql.java.generics.VectorTest"/>
+            <method modifier="private static" name="lambda$0" returnType="void"/>
+            <method modifier="" name="testRemoveAndSize" returnType="void"/>
+            <method modifier="" name="testAddAndSize" returnType="void"/>
+            <method modifier="" name="testIsEmpty" returnType="void"/>
+            <method modifier="" name="testContains" returnType="void"/>
+            <method modifier="" name="testIndexOf" returnType="void"/>
+            <method modifier="public" name="testOccurrencesIter" returnType="void"/>
+            <method modifier="" name="testGet" returnType="void"/>
+            <method modifier="" name="testSet" returnType="void"/>
+            <method modifier="private static" name="lambda$1" returnType="void"/>
+            <method modifier="private static" name="lambda$3" returnType="void"/>
+            <method modifier="private static" name="lambda$2" returnType="void"/>
+            <relation class="List" name="Dépendance"/>
+            <relation class="List" name="Dépendance"/>
+            <relation class="List" name="Dépendance"/>
+            <relation class="List" name="Dépendance"/>
+        </classe>
+        <interface name="List">
+            <method modifier="public abstract" name="remove" returnType="java.lang.Object"/>
+            <method modifier="public abstract" name="size" returnType="int"/>
+            <method modifier="public abstract" name="get" returnType="java.lang.Object"/>
+            <method modifier="public abstract" name="indexOf" returnType="int"/>
+            <method modifier="public abstract" name="isEmpty" returnType="boolean"/>
+            <method modifier="public abstract" name="add" returnType="void"/>
+            <method modifier="public abstract" name="contains" returnType="boolean"/>
+            <method modifier="public abstract" name="set" returnType="void"/>
+            <method modifier="public abstract" name="removeAll" returnType="void"/>
+            <method modifier="public abstract" name="insertAt" returnType="void"/>
+            <method modifier="public abstract" name="OccurrencesIter" returnType="int"/>
+            <method modifier="public abstract" name="showElement" returnType="java.lang.String"/>
+        </interface>
+    </package>
+</project>
